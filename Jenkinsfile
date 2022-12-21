@@ -252,7 +252,8 @@ docker push devopseasylearning2021/s4-weather:${BUILD_NUMBER}$WEATHERTag
             }
         }
 
-        stage('wait for argocd') {
+        
+	    stage('wait for argocd') {
             steps {
                 sh '''
                 ls 
