@@ -6,7 +6,6 @@ pipeline {
   environment {
 		DOCKERHUB_CREDENTIALS=credentials('dockerhub')
 	}
-
 options {
     buildDiscarder(logRotator(numToKeepStr: '20'))
     disableConcurrentBuilds()
